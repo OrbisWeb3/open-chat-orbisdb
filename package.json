@@ -1,0 +1,23 @@
+{
+  "name": "open-chat-orbisdb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@useorbis/db-sdk": "^0.0.27-alpha",
+    "next": "14.1.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-time-ago": "^7.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}

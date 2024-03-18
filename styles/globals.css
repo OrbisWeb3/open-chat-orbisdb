@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #FFF;
+}
+
+@font-face {
+  font-family: 'CPMono_v07 ExtraLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('CPMono_v07 ExtraLight'), url('CPMono_v07_ExtraLight.woff') format('woff');
+}
+  
+
+@font-face {
+  font-family: 'CPMono_v07 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('CPMono_v07 Light'), url('CPMono_v07_Light.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'CPMono_v07 Plain';
+  font-style: normal;
+  font-weight: normal;
+  src: local('CPMono_v07 Plain'), url('CPMono_v07_Plain.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'CPMono_v07 Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('CPMono_v07 Bold'), url('CPMono_v07_Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'CPMono_v07 Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('CPMono_v07 Black'), url('CPMono_v07_Black.woff') format('woff');
+}
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.dm-sans-semi-bold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.dm-sans-bold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: "CPMono_v07 Plain";
+  font-size: 12px;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+.text-xxs {
+  font-size: 10.5px;
+}
+.text-xxxs {
+  font-size: 9px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsla(0,0%,100%,.1) transparent
+}
+
+::-webkit-scrollbar {
+  width: 6px
+}
+
+::-webkit-scrollbar-track {
+  background: transparent
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsla(0,0%,100%,.1);
+  border-radius: 20px
+}
